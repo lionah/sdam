@@ -5,21 +5,21 @@
   "main": "dist/App.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node src/App.ts",
+    "dev": "tsx src/App.ts",
     "start": "node dist/App.ts",
-    "test": "echo \"No test specified\" && exit 1",
+    "test": "echo \"No test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
 }
