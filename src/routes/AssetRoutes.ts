@@ -1,4 +1,4 @@
-import { AssetController } from "controller/AssetController";
+import { AssetController } from "../controller/AssetController";
 import { Router } from "express";
 import multer from "multer";
 

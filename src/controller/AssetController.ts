@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { AssetModel, AssetSchema } from 'model/Asset';
+import { AssetModel, AssetSchema } from '../model/Asset';
 
 export class AssetController {
 

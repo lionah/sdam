@@ -1,6 +1,6 @@
-import db from 'Database.js';
+import db from './Database';
 import express from 'express';
-import { assetRoutes } from 'routes/AssetRoutes';
+import { assetRoutes } from './routes/AssetRoutes';
 
 const app = express();
 
