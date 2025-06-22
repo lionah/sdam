@@ -2,8 +2,8 @@ import { z } from 'zod';
 import { Schema, model } from 'mongoose';
 
 export const AssetSchema = z.object({
-  filename: z.string().required(),
-  mimeType: z.string().required()
+  filename: z.string(),
+  mimeType: z.string()
 });
 
 export type Asset = z.infer<typeof AssetSchema>;
