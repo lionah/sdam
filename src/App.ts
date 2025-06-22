@@ -1,9 +1,12 @@
 import db from 'Database.js';
-import express, {Application, Request, Response} from 'express';
+import express from 'express';
+import { assetRoutes } from 'routes/AssetRoutes';
 
-const app: Application = express();
+const app = express();
 
-app.get('/', ( req: Request, res: Response) => {res.send('Hello World')});
+app.use(express.json());
+
+app.use('/assets', assetRoutes);
 
 db.then(() => {
   app.listen(3000, () => console.log('Server running on port 3000'));
