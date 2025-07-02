@@ -1,6 +1,10 @@
+import Heading from "./components/Heading"
+
 function App() {
   return (
-    <h1>Simple Digital Asset Management</h1>
+    <Heading
+      title="Simple Digital Asset Management"
+    />
   )
 }
 
