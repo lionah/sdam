@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/App.js",
   "scripts": {
-    "build:server": "tsc -p server/tsconfig.json",
-    "dev:server": "tsc -p server/tsconfig.json && concurrently \"tsc -p server/tsconfig.json --watch\" \"nodemon -w dist/App.js\"",
-    "start:server": "node dist/App.js",
+    "build": "tsc -p server/tsconfig.json",
+    "dev": "tsc -p server/tsconfig.json && concurrently \"tsc -p server/tsconfig.json --watch\" \"nodemon -w dist/App.js\"",
+    "start": "node dist/App.js",
     "test": "echo \"No test specified\" && exit 1"
   },
   "keywords": [],
