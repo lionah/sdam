@@ -5,8 +5,8 @@
   "main": "dist/App.js",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/App.ts",
-    "start": "node dist/App.ts",
+    "dev": "tsc && concurrently \"tsc -w\" \"nodemon -w dist/App.js\"",
+    "start": "node dist/App.js",
     "test": "echo \"No test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,7 +25,8 @@
     "@types/mongoose": "^5.11.96",
     "@types/multer": "^1.4.13",
     "@types/node": "^24.0.3",
-    "tsx": "^4.20.3",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   }
 }
