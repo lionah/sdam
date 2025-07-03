@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Heading from "../components/Heading";
 
-const Layout = () => {
+const LayoutPage = () => {
   return (
     <>
       <Heading
@@ -13,4 +13,4 @@ const Layout = () => {
   )
 }
 
-export default Layout;
+export default LayoutPage;
