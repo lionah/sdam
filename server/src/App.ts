@@ -6,7 +6,11 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/assets', assetRoutes);
+const api = express.Router();
+
+api.use('/assets', assetRoutes);
+
+app.use('/api/v1', api);
 
 db.then(() => {
   app.listen(3000, () => console.log('Server running on port 3000'));
