@@ -11,7 +11,7 @@ function App() {
         <Route path="*" element={<LayoutPage />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

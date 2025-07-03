@@ -10,7 +10,7 @@ function LayoutPage() {
 
       <Outlet />
     </>
-  )
+  );
 }
 
 export default LayoutPage;
