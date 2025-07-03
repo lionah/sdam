@@ -21,3 +21,18 @@ img, picture, video, svg {
 input, button, textarea, select {
   font: inherit;
 }
+
+table {
+  td, th {
+    padding: 0 .5em;
+    text-align: left;
+  }
+
+  thead {
+    background: #D1D1D1;
+  }
+
+  tbody tr:nth-child(even) {
+     background-color: #F1F1F1;
+  }
+}

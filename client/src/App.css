@@ -1,5 +1,27 @@
 section {
   margin: 1em;
+
+  nav {
+    background: #D1D1D1;
+    margin: 1em 0;
+    padding: 1px .5em;
+
+    ul {
+      display: flex;
+      gap: 2em;
+      list-style: none;
+    }
+
+    li {
+      display: block;
+      background: #FFF;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
 }
 
 .LayoutPage-container {
