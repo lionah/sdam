@@ -1,10 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
-import './LayoutPage.css';
 
 function LayoutPage() {
   return (
     <>
-      <header>
+      <header className="LayoutPage-container">
         <h1>SDAM</h1>
 
         <nav>

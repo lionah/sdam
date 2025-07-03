@@ -8,7 +8,7 @@ interface ErrorPageProps {
 
 function ErrorPage({ code, title, message }: ErrorPageProps) {
   return (
-    <div className="error-page">
+    <div className="ErrorPage-container">
       <Heading
         title={code || title}
         subtitle={title}
