@@ -2,7 +2,7 @@ interface HeadingProps {
 	title: string;
 }
 
-const Heading = ({ title }: HeadingProps) => {
+function Heading({ title }: HeadingProps) {
 	return (
 		<h1>{title}</h1>
 	)
