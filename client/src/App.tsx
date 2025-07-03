@@ -1,10 +1,13 @@
-import Heading from "./components/Heading"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
-    <Heading
-      title="Simple Digital Asset Management"
-    />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
