@@ -6,10 +6,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LayoutPage />} />
-        <Route path="/assets" element={<LayoutPage />} />
-        <Route path="/assets/upload" element={<LayoutPage />} />
-        <Route path="*" element={<ErrorPage code="404" title="Page Not Found" />} />
+        <Route path="/" element={<LayoutPage />}>
+          <Route path="/assets" />
+          <Route path="/assets/upload" />
+          <Route path="*" element={<ErrorPage code="404" title="Page Not Found" />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

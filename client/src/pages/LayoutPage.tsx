@@ -1,12 +1,18 @@
-import { Outlet } from "react-router-dom";
-import Heading from "../components/Heading";
+import { NavLink, Outlet } from "react-router-dom";
+import './LayoutPage.css';
 
 function LayoutPage() {
   return (
     <>
-      <Heading
-        title="Welcome"
-      />
+      <header>
+        <h1>SDAM</h1>
+
+        <nav>
+          <ul>
+            <li><NavLink to="/assets">Assets</NavLink></li>
+          </ul>
+        </nav>
+      </header>
 
       <Outlet />
     </>
