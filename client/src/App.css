@@ -22,6 +22,26 @@ section {
     }
   }
 }
+
+.input-item {
+  margin: .5em 0;
+
+  label {
+    margin-right: 1em;
+  }
+
+  input {
+    border: 1px solid #D1D1D1;;
+    padding: .2em;
+  }
+}
+
+.button-row {
+  margin-top: 2em;
+
+  button {
+    padding: .2em .5em;
+  }
 }
 
 .LayoutPage-container {

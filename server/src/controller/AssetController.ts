@@ -4,8 +4,6 @@ import { AssetModel, AssetSchema } from '../model/Asset';
 export class AssetController {
 
   async create(req: Request, res: Response): Promise<void> {
-    console.log(req.body, req.query, req.headers)
-
     const filename = req.file?.originalname;
     const mimeType = req.file?.mimetype;
 
