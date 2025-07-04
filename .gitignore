@@ -1,3 +1,6 @@
+/data
+/server/data
+
 .pnp/
 build/
 coverage/
